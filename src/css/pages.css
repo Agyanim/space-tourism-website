@@ -1,46 +1,46 @@
 .home-container{
     background-color: black;
-    background-image: url("home/background-home-mobile.jpg") ;
+    background-image: url("./home/background-home-mobile.jpg") ;
     background-size: auto;
     background-repeat: no-repeat;
 }
 
 @media( min-width:765px) {
     .home-container{
-        background-image: url("home/background-home-tablet.jpg") ;
+        background-image: url("./home/background-home-tablet.jpg") ;
     }
     
 }
 @media( min-width:1020px) {
     .home-container{
-        background-image: url("home/background-home-desktop.jpg") ;
+        background-image: url("./home/background-home-desktop.jpg") ;
     }
     
 }
 
 .destinaion-container{
     background-color:black;
-    background-image: url("destination/background-destination-mobile.jpg") ;
+    background-image: url("./destination/background-destination-mobile.jpg") ;
     background-size: auto;
     background-repeat: no-repeat;
 }
 
 @media( min-width:765px) {
     .destinaion-container{
-        background-image: url("destination/background-destination-tablet.jpg") ;
+        background-image: url("./destination/background-destination-tablet.jpg") ;
     }
     
 }
 @media( min-width:1020px) {
     .destinaion-container{
-        background-image: url("destination/background-destination-desktop.jpg") ;
+        background-image: url("./destination/background-destination-desktop.jpg") ;
     }
     
 }
 
 .crew-container{
     background-color: black;
-    background-image: url("crew/background-crew-mobile.jpg") ;
+    background-image: url("./crew/background-crew-mobile.jpg") ;
     background-size: auto;
     background-repeat: no-repeat;
 
@@ -48,19 +48,19 @@
 
 @media( min-width:765px) {
     .crew-container{
-        background-image: url("crew/background-crew-tablet.jpg") ;
+        background-image: url("./crew/background-crew-tablet.jpg") ;
     }
     
 }
 @media( min-width:1020px) {
     .crew-container{
-        background-image: url("crew/background-crew-desktop.jpg") ;
+        background-image: url("./crew/background-crew-desktop.jpg") ;
     }
     
 }
 .technology-container{
     background-color: black;
-    background-image: url("technology/background-technology-mobile.jpg") ;
+    background-image: url("./technology/background-technology-mobile.jpg") ;
     background-size: auto;
     background-repeat: no-repeat;
 
@@ -68,13 +68,13 @@
 
 @media( min-width:765px) {
     .technology-container{
-        background-image: url("technology/background-technology-tablet.jpg") ;
+        background-image: url("./technology/background-technology-tablet.jpg") ;
     }
     
 }
 @media( min-width:1020px) {
     .technology-container{
-        background-image: url("technology/background-technology-desktop.jpg") ;
+        background-image: url("./technology/background-technology-desktop.jpg") ;
     }
     
 }
