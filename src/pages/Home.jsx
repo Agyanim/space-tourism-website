@@ -4,7 +4,7 @@ const Home = () => {
   return (
     <>
       <div className=" home-container relative w-screen h-[100svh]">
-        <section className="flex  justify-center items-center w-full absolute top-[60%]">
+        <section className="flex  justify-center items-center w-full absolute top-[50%]">
           <div className="flex flex-col gap-[2rem] lg:gap-0 lg:flex-row text-white absolute w-[95%] lg:w-[80%] justify-between items-center pb-[5%] top-[-15rem]">
             <section className="flex flex-col justify-center items-center  lg:mt-0 lg:items-start lg:justify-start w-[100%] lg:w-[43%] p-2">
               <h5 className="text-primaryGray ">SO, YOU WANT TO TRAVEL TO</h5>
