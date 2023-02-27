@@ -48,11 +48,14 @@ const GlobalLayout = () => {
     <>
       <section className="flex justify-end absolute right-0 top-[2rem] z-20">
         <header className="flex w-[95Vw] items-center justify-between relative ml-0">
+          {/* logo */}
           <div className="w-100% ">
             <img src="shared/logo.svg" alt="" />
           </div>
-          <div className="w-[45%] h-[1px] bg-primaryWhite ml-[5rem] absolute right-[48%] z-20"></div>
-          <nav className="w-[50%] h-[6rem] right-0   flex justify-center items-center gap-[3rem]  backdrop-blur-[50px] ">
+          {/* horrizontal line */}
+          <div className=" hidden lg:flex w-[45%] h-[1px] bg-primaryWhite ml-[5rem] absolute right-[48%] z-20"></div>
+          {/* nav links */}
+          <nav className="hidden lg:flex w-[50%] h-[6rem] right-0  justify-center items-center gap-[3rem]  backdrop-blur-[50px] ">
             {renderLink}
           </nav>
         </header>

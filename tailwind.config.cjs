@@ -6,6 +6,7 @@ module.exports = {
       fontFamily: {
         Bellefair: ["Bellefair", "serif"],
         BarlowCondensed: ["Barlow Condensed", "sans-serif"],
+        Barlow: ['Barlow', 'sans-serif'],
         subHeading1: "var(--subHeading-1)",
       },
       colors: {
