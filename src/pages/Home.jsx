@@ -3,7 +3,7 @@ import "../css/pages.css";
 const Home = () => {
   return (
     <>
-      <div className=" home-container relative w-[100svw] h-[43.688rem] lg:h-[56.25rem]">
+      <div className=" home-container relative w-[100svw] h-screen lg:h-[56.25rem]">
         <section className="flex  justify-center items-center w-full absolute mt-[22rem] lg:mt-[40rem]">
           <div className="flex flex-col gap-[2rem] lg:gap-0 lg:flex-row text-white absolute w-[95%] lg:w-[80%] justify-between items-center pb-[5%] top-[-15rem]">
             <section className="flex flex-col justify-center items-center  lg:mt-0 lg:items-start lg:justify-start w-[100%] lg:w-[43%] p-2">
