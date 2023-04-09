@@ -16,7 +16,7 @@ const Home = () => {
                 of this world experience!
               </p>
             </div>
-            <div className="w-[274px] h-[274px] bg-primaryWhite rounded-[50%] absolute right-0 bottom-0 flex justify-center items-center cursor-pointer border-8 border-white/50  ">
+            <div className="w-[274px] h-[274px] bg-primaryWhite rounded-[50%] absolute right-0 bottom-0 flex justify-center items-center cursor-pointer border-8 border-white/50 ">
               <h4 className="text-primaryDark absolute text-center">EXPLORE</h4>
             </div>
         </div>
