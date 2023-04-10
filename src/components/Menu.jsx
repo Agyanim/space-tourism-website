@@ -27,7 +27,7 @@ const Menu = () => {
     const renderLink = navLinks.map((link, id) => {
         return (
           <div
-            className="font-BarlowCondensed text-[16px] text-primaryWhite bg-white w-[10rem] "
+            className=" hidden font-BarlowCondensed text-[16px] text-primaryWhite bg-white w-[10rem] "
             key={link.id}
           >
             <NavLink  to={link.Url} className={({isActive})=>(
