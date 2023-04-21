@@ -52,7 +52,7 @@ const Crew = () => {
         {/* page content */}
         <section className="absolute mt-52">{crewList[selector]}</section>
         <section className=" absolute flex gap-2 top-[90%] left-[8.5%]">
-          <input type="radio" name="select" id={0} onClick={selectHandler} />
+          <input type="radio" name="select" id={0} onClick={selectHandler}/>
           <input type="radio" name="select" id={2} onClick={selectHandler} />
           <input type="radio" name="select" id={3} onClick={selectHandler} />
           <input type="radio" name="select" id={1} onClick={selectHandler} />
