@@ -1,5 +1,5 @@
 import React from "react";
-import { menuData } from "../data/data";
+import { menuData, pageTitles } from "../data/data";
 import DestinationCard from "../components/DestinationCard";
 import { data } from "../data/data";
 import { useState } from "react";
@@ -7,6 +7,7 @@ import { NavLink } from "react-router-dom";
 const Destination = () => {
   const { destinations } = data;
   const [destinationId, setDestinationId] = useState(0);
+  const newPageTitles = pageTitles;
 
   const cardList = [
     <DestinationCard
@@ -57,18 +58,16 @@ const Destination = () => {
 
   return (
     <>
-      <div className="destinaion-container relative w-screen h-[100vh]">
-        <div className="container absolute top-[10rem]">
-          <h5 className="relative text-primaryWhite uppercase left-[20rem]">
-            <span className="mr-5">01</span>
-            Pick your destination
+      <div className="destinaion-container container-wrapper">
+        <div className=" relative top-[10rem]">
+          <h5 className="relative  left-36 w-1/3">
+            <span className="mr-5">{newPageTitles[0].id}</span>
+            {newPageTitles[0].title}
           </h5>
-          <div className="destination-wrapper">
-            <div className="relative left-[65%] flex gap-5">{list}</div>
-            <section className="description-wrapper absolute">
-              {cardList[destinationId]}
-            </section>
-          </div>
+        </div>
+        <div className="relative top-[10rem]">
+          <div className="flex gap-5 w-1/4 ml-[59%] ">{list}</div>
+          <section className="">{cardList[destinationId]}</section>
         </div>
       </div>
     </>

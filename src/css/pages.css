@@ -1,8 +1,7 @@
 .home-container{
     background-color: black;
     background-image: url("/home/background-home-mobile.jpg") ;
-    background-size: cover;
-    /* background-position: center; */
+    background-size: auto;
     background-repeat: no-repeat;
 }
 

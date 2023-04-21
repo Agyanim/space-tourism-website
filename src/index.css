@@ -8,16 +8,16 @@
 
 @layer base {
   h1 {
-    @apply text-[80px] lg:text-[150px] font-Bellefair;
+    @apply text-[5rem] lg:text-[8.5rem] font-Bellefair;
   }
   h2 {
-    @apply text-[100px] font-Bellefair;
+    @apply text-[4rem] font-Bellefair;
   }
-  h4 {
-    @apply text-base lg:text-[32px] font-Bellefair ;
+  h3 {
+    @apply text-base lg:text-[1.5rem] font-Bellefair ;
   }
   h5 {
-    @apply  text-base lg:text-[28px] font-BarlowCondensed tracking-[3px] lg:tracking-[4.7px];
+    @apply  text-base lg:text-xl font-BarlowCondensed tracking-[3px] lg:tracking-[4.7px] text-primaryWhite uppercase ;
   }
   
 
@@ -26,6 +26,10 @@
     --primary-Gray:#D0D6F9;
     --primary-White: #FFFFFF;
    
+  }
+
+  .container-wrapper{
+    @apply relative w-screen h-screen
   }
 }
 

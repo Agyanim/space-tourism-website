@@ -46,7 +46,7 @@ const GlobalLayout = () => {
   });
 
   return (
-    <>
+    <div className="h-screen bg-slate-500">
       <section className="flex justify-end absolute right-0 top-[2rem] z-20">
         <header className="flex w-[95Vw] items-center justify-between relative ml-0">
           {/* logo */}
@@ -59,9 +59,9 @@ const GlobalLayout = () => {
           <img  className="hidden"src="shared/icon-close.svg" alt="" />
           </div>
           {/* horrizontal line */}
-          <div className=" hidden lg:flex w-[45%] h-[1px] bg-primaryWhite ml-[5rem] absolute right-[48%] z-20"></div>
+          <div className=" hidden lg:flex w-[38%] h-[1px] bg-primaryWhite ml-[5rem] absolute right-[55%] z-20"></div>
           {/* nav links */}
-          <nav className="hidden lg:flex w-[50%] h-[6rem] right-0  justify-center items-center gap-[3rem]  backdrop-blur-[50px] ">
+          <nav className="hidden lg:flex w-[62%] h-[6rem] right-0  justify-center items-center gap-[3rem]  backdrop-blur-[50px] ">
             {renderLink}
           </nav>
         </header>
@@ -70,9 +70,8 @@ const GlobalLayout = () => {
 
 <Menu/>
 </div>
-
-      <Outlet />
-    </>
+      <Outlet/>
+    </div>
   );
 };
 

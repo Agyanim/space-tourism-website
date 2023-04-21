@@ -1,32 +1,30 @@
 import React from "react";
-
  const DestinationCard = ({Image,Name,Description,Distance,Travel}) => {
-
 
   return (
     <div>
-      <div className="flex w-[100vw] justify-between items-center">
-        <section className="w-[40%] flex justify-center">
+      <div className="flex w-[100vw]  justify-center items-center gap-[17rem]">
+        <section className="w-[30%] flex justify-center items-center ml-2">
           <img
-            className="w-[50%]"
+            className="w-[16rem]"
             src={Image}
             alt="globe"
           />
         </section>
-        <section className="w-[40%] text-primaryWhite">
+        <section className="w-[32%] text-primaryWhite">
 
           <div>
-            <h1>{Name}</h1>
-            <p className="w-[75%] mb-10">{Description}</p>
+            <h1 className=" overflow-hidden text-[4rem] uppercase">{Name}</h1>
+            <p className="w-[75%] lg:w-full mb-10  text-lg">{Description}</p>
           </div>
           <hr className="w-[75%]" />
-          <section className="flex justify-start gap-20">
+          <section className="flex justify-start gap-20 p-2">
 
           <div>
             <h6>AVE. DISTANCE</h6>
             <p className="font-normal">{Distance}</p>
           </div>
-          <div>
+          <div className="">
             <h6>AVE. EST. TRAVEL TIME</h6>
             <p>{Travel}</p>
           </div>

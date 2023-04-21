@@ -116,3 +116,8 @@ export const data = {
 };
 
 export const menuData = ["MOON", "MARS", "EUROPA", "TITAN"];
+export const pageTitles=[
+  {id:"01",title:"PICK YOUR DESTINATION"},
+  {id:"02",title:"MEET YOUR CREW"},
+  {id:"03",title:"SPACE LAUNCH 101"}
+]
