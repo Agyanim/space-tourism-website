@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Bellefair&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -14,38 +14,37 @@
     @apply text-[4rem] font-Bellefair;
   }
   h3 {
-    @apply text-base lg:text-[1.5rem] font-Bellefair ;
+    @apply text-base lg:text-[1.5rem] font-Bellefair;
   }
   h5 {
-    @apply  text-base lg:text-xl font-BarlowCondensed tracking-[3px] lg:tracking-[4.7px] text-primaryWhite uppercase ;
-  }
-  
-
-  :root{
-    --primary-Dark:#0B0D17;
-    --primary-Gray:#D0D6F9;
-    --primary-White: #FFFFFF;
-   
+    @apply text-base lg:text-xl font-BarlowCondensed tracking-[3px] lg:tracking-[4.7px] text-primaryWhite uppercase;
   }
 
-  .container-wrapper{
-    @apply relative w-screen h-screen
+  :root {
+    --primary-Dark: #0b0d17;
+    --primary-Gray: #d0d6f9;
+    --primary-White: #ffffff;
+  }
+
+  .container-wrapper {
+    @apply relative w-screen h-screen;
+  }
+
+  input[type="radio"] {
+    appearance: none;
+    padding: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    accent-color: white;
+    background-color:gray;
+    opacity: 0.2;
+    
+  }
+  input[type="radio"]:checked{
+    background-color: white;
+    opacity: 1;
+
+
   }
 }
 
-/* :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-}
- */

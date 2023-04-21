@@ -3,7 +3,6 @@ import { menuData, pageTitles } from "../data/data";
 import DestinationCard from "../components/DestinationCard";
 import { data } from "../data/data";
 import { useState } from "react";
-import { NavLink } from "react-router-dom";
 const Destination = () => {
   const { destinations } = data;
   const [destinationId, setDestinationId] = useState(0);
@@ -46,7 +45,7 @@ const Destination = () => {
   const list = menuData.map((menu, i) => {
     return (
       <button
-        className="text-white active:border-b-2 border-white"
+        className="text-[#D0D6F9] active:border-b-2 border-white"
         key={i}
         id={i}
         onClick={selectId}
@@ -61,7 +60,7 @@ const Destination = () => {
       <div className="destinaion-container container-wrapper">
         <div className=" relative top-[10rem]">
           <h5 className="relative  left-36 w-1/3">
-            <span className="mr-5">{newPageTitles[0].id}</span>
+            <span className="mr-5 text-primaryWhite opacity-50">{newPageTitles[0].id}</span>
             {newPageTitles[0].title}
           </h5>
         </div>

@@ -39,7 +39,7 @@ const GlobalLayout = () => {
           isActive? activeLink :normalLink
         )
         }>
-        <span className="mr-3 font-extrabold">{link.id}</span>{link.Name}
+        <span className="mr-3 font-extrabold opacity-100 ">{link.id}</span> <span className="opacity-50">{link.Name}</span>
         </NavLink>
       </div>
     );
