@@ -6,6 +6,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer {
+  .technologySelector {
+    @apply appearance-none;
+  }
+}
+
 @layer base {
   h1 {
     @apply text-[5rem] lg:text-[8.5rem] font-Bellefair;
@@ -30,7 +36,8 @@
     @apply relative w-screen h-screen;
   }
 
-  input[type="radio"] {
+  .crewSelector{
+    /* @apply p-2 rounded-3xl cursor-pointer bg-gray-500 opacity-20 ; */
     appearance: none;
     padding: 8px;
     border-radius: 50%;
@@ -38,13 +45,25 @@
     accent-color: white;
     background-color:gray;
     opacity: 0.2;
-    
   }
-  input[type="radio"]:checked{
+  .crewSelector:checked {
     background-color: white;
     opacity: 1;
-
-
+  }
+  .lbl{
+    @apply left-6 top-4
+  }
+  .lbl-input{
+    @apply absolute text-lg
+  }
+  .technologySelector {
+    @apply  p-8 rounded-full cursor-pointer opacity-60 border
+     border-white bg-transparent 
+     ;
+  }
+  .technologySelector:checked {
+    background-color:white;
+    opacity: 1;
   }
 }
 

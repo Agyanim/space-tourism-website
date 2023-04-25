@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { pageTitles, data } from "../data/data";
 import CrewCard from "../components/CrewCard";
 
@@ -39,6 +39,17 @@ const Crew = () => {
     Setselector(e.target.id);
   };
 
+const firstSelectorRef = useRef(null)
+
+useEffect(() => {
+  firstSelectorRef.current.checked="true";
+
+  return () => {
+    firstSelectorRef.current.checked="false";
+  }
+}, [])
+
+
   return (
     <>
       <div className="crew-container container-wrapper relative">
@@ -52,10 +63,10 @@ const Crew = () => {
         {/* page content */}
         <section className="absolute mt-52">{crewList[selector]}</section>
         <section className=" absolute flex gap-2 top-[90%] left-[8.5%]">
-          <input type="radio" name="select" id={0} onClick={selectHandler}/>
-          <input type="radio" name="select" id={2} onClick={selectHandler} />
-          <input type="radio" name="select" id={3} onClick={selectHandler} />
-          <input type="radio" name="select" id={1} onClick={selectHandler} />
+          <input className="crewSelector" ref={firstSelectorRef} type="radio" name="select" id={0}  onClick={selectHandler}/>
+          <input className="crewSelector" type="radio" name="select" id={1} onClick={selectHandler} />
+          <input className="crewSelector" type="radio" name="select" id={2} onClick={selectHandler} />
+          <input className="crewSelector" type="radio" name="select" id={3} onClick={selectHandler} />
         </section>
       </div>
     </>

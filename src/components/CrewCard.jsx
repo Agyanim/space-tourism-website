@@ -3,7 +3,7 @@ import React, { useState } from "react";
 const CrewCard = ({ Name, Role, Bio, Image }) => {
   return (
     <>
-      <div className="flex justify-center items-center  mt-[-3.3rem]  gap-[3rem] w-[95%]">
+      <div className="flex justify-center items-center  mt-[-3.8rem]  gap-[3rem] w-[95%]">
         {/* content wrapper */}
         <section className="text-primaryWhite w-[35.5%]">
           <h4 className="text-primaryWhite opacity-50 uppercase mix-blend-normal text-lg tracking-[0.2rem]">
@@ -14,7 +14,7 @@ const CrewCard = ({ Name, Role, Bio, Image }) => {
         </section>
         {/* hero image */}
         <section
-          className="w-[45%] h-[30rem] mt-[-1.5re]"
+          className="w-[45%] h-[30rem] mt-[0.5rem] overflow-hidden"
           style={{
             backgroundColor: "transparent",
             backgroundImage: `url(${Image})`,
