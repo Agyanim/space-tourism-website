@@ -5,8 +5,8 @@ const TechnologyCard = ({ Name, Image, Description }) => {
   return (
     <div className="flex justify-end items-center relative top-[14rem] w-screen">
       <div className="flex justify-end items-center ">
-        <section className="text-white mr-[10rem] mt-[-4rem]"><TechnologySectorCard/></section>
-        <section className="mr-[10rem]  w-[25%]">
+        <section className="text-white mr-[5rem]"><TechnologySectorCard/></section>
+        <section className="mr-[14rem]  w-[25%]">
           <div className="text-white lg:text-blue-200">
             <p className="">THE TECHNOLOGY</p>
             <h2 className="text-[2.5rem] uppercase mb-4">{Name}</h2>

@@ -6,11 +6,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer {
-  .technologySelector {
-    @apply appearance-none;
-  }
-}
 
 @layer base {
   h1 {
@@ -51,19 +46,7 @@
     opacity: 1;
   }
   .lbl{
-    @apply left-6 top-4
-  }
-  .lbl-input{
-    @apply absolute text-lg
-  }
-  .technologySelector {
-    @apply  p-8 rounded-full cursor-pointer opacity-60 border
-     border-white bg-transparent 
-     ;
-  }
-  .technologySelector:checked {
-    background-color:white;
-    opacity: 1;
+    @apply  w-16 h-16 rounded-full text-center flex justify-center items-center font-bold 
   }
 }
 

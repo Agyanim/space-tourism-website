@@ -8,21 +8,20 @@ const TechnologySectorCard = () => {
 const onSelectorHandler =(event)=> { 
 setSelector(event.target.id)
 }
-
-
+const select=selector
   return (
-    <div className="flex flex-col gap-24 ">
+    <div className="flex flex-col gap-8 ">
       <div className="relative">
-        <label className={(selector===0 )? "lbl-input lbl text-black":"lbl-input lbl z-10 text-white"} htmlFor="selector-1">1</label>
-        <input className="technologySelector lbl-input z-0" type="radio" name="selector" id="0" onClick={onSelectorHandler}/>
+        <label className={+select===0 ? "lbl text-black bg-white ":"lbl-input lbl border border-whilte text-white"} htmlFor="0">1</label>
+        <input className=" hidden" type="radio" name="selector" id="0" onClick={onSelectorHandler}/>
       </div>
       <div className="relative">
-        <label className="lbl-input  lbl" htmlFor="selector-2">2</label>
-        <input className="technologySelector lbl-input" type="radio" name="selector" id="1" onClick={onSelectorHandler}/>
+        <label className={+select===1 ? "lbl text-black bg-white ":"lbl-input lbl border border-whilte text-white"}  htmlFor="1">2</label>
+        <input className="hidden" type="radio" name="selector" id="1" onClick={onSelectorHandler}/>
       </div>
       <div className="relative">
-        <label className="lbl-input lbl"htmlFor="selector-3">3</label>
-        <input className="technologySelector lbl-input" type="radio" name="selector" id="2" onClick={onSelectorHandler}/>
+        <label className={+select===2 ? "lbl text-black bg-white ":"lbl-input lbl border border-whilte text-white"} htmlFor="2">3</label>
+        <input className="hidden" type="radio" name="selector" id="2" onClick={onSelectorHandler}/>
       </div>
     </div>
   );
