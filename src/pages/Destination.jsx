@@ -2,11 +2,12 @@ import React from "react";
 import { menuData, pageTitles } from "../data/data";
 import DestinationCard from "../components/DestinationCard";
 import { data } from "../data/data";
-import { useState } from "react";
+import DestinationSelectorCard from "../components/DestinationSelectorCard";
+import { selectorStore } from "../context/store";
 const Destination = () => {
   const { destinations } = data;
-  const [destinationId, setDestinationId] = useState(0);
   const newPageTitles = pageTitles;
+  const{destinationSelector}=selectorStore()
 
   const cardList = [
     <DestinationCard
@@ -39,21 +40,18 @@ const Destination = () => {
     />,
   ];
 
-  const selectId = (event) => {
-    setDestinationId(event.target.id);
-  };
-  const list = menuData.map((menu, i) => {
-    return (
-      <button
-        className="text-[#D0D6F9] active:border-b-2 border-white"
-        key={i}
-        id={i}
-        onClick={selectId}
-      >
-        {menu}
-      </button>
-    );
-  });
+  // const list = menuData.map((menu, i) => {
+  //   return (
+  //     <button
+  //       className="text-[#D0D6F9] active:border-b-2 border-white"
+  //       key={i}
+  //       id={i}
+  //       onClick={selectId}
+  //     >
+  //       {menu}
+  //     </button>
+  //   );
+  // });
 
   return (
     <>
@@ -65,8 +63,8 @@ const Destination = () => {
           </h5>
         </div>
         <div className="relative top-[10rem]">
-          <div className="flex gap-5 w-1/4 ml-[59%] ">{list}</div>
-          <section className="">{cardList[destinationId]}</section>
+          <div ><DestinationSelectorCard/></div>
+          <section >{cardList[destinationSelector]}</section>
         </div>
       </div>
     </>

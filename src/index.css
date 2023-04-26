@@ -22,9 +22,10 @@
   }
 
   :root {
-    --primary-Dark: #0b0d17;
-    --primary-Gray: #d0d6f9;
-    --primary-White: #ffffff;
+    --primary-dark: #0b0d17;
+    --primary-gray: #d0d6f9;
+    --primary-white: #ffffff;
+    /* --primary-purple: #D0D6F9; */
   }
 
   .container-wrapper {
@@ -45,8 +46,11 @@
     background-color: white;
     opacity: 1;
   }
-  .lbl{
+  .technology-lbl{
     @apply  w-16 h-16 rounded-full text-center flex justify-center items-center font-bold 
+  }
+  .destination-lbl{
+    @apply  border-white  pb-2 text-primaryGray font-BarlowCondensed 
   }
 }
 

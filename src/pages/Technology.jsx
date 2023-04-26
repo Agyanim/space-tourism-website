@@ -25,7 +25,7 @@ const technologyList = [
 
 
 const Technology = () => {
-  const {selector}=selectorStore();
+  const {technologySelector}=selectorStore();
 
   return (
     <>
@@ -37,7 +37,7 @@ const Technology = () => {
           </h5>
         </section>
         <section>
-         {technologyList[selector]}
+         {technologyList[technologySelector]}
         </section>
       </div>
     </>

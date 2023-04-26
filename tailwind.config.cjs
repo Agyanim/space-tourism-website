@@ -10,9 +10,10 @@ module.exports = {
         subHeading1: "var(--subHeading-1)",
       },
       colors: {
-        primaryDark: "var(--primary-Dark)",
-        primaryGray: "var(--primary-Gray)",
-        primaryWhite: "var(--primary-White)",
+        primaryDark: "var(--primary-dark)",
+        primaryGray: "var(--primary-gray)",
+        primaryWhite: "var(--primary-white)"
+        // primaryPurple: "var(--primary-purple)"
       },
     },
   },
