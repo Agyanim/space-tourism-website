@@ -2,7 +2,7 @@
 .home-container{
     background-color: black;
     background-image: url("/home/background-home-mobile.jpg") ;
-    background-size: auto;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
@@ -15,6 +15,8 @@
 @media( min-width:1020px) {
     .home-container{
         background-image: url("/home/background-home-desktop.jpg") ;
+        background-size: auto;
+
     }
     
 }
