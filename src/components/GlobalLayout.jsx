@@ -39,7 +39,7 @@ const GlobalLayout = () => {
           isActive? activeLink :normalLink
         )
         }>
-        <span className="mr-3 font-extrabold opacity-100 ">{link.id}</span> <span className="opacity-50">{link.Name}</span>
+        <span className="mr-3 font-extrabold opacity-100 md:hidden lg:flex">{link.id}</span> <span className="opacity-50">{link.Name}</span>
         </NavLink>
       </div>
     );
@@ -47,21 +47,21 @@ const GlobalLayout = () => {
 
   return (
     <div className="h-screen bg-slate-500">
-      <section className="flex justify-end absolute right-0 top-[2rem] z-20">
+      <section className="flex justify-end absolute right-0 top-[2rem] md:top-0 lg:top-[2rem] z-20">
         <header className="flex w-[95Vw] items-center justify-between relative ml-0">
           {/* logo */}
           <div className="w-100% ">
             <img className="w-[40px] md:w-[48px]" src="shared/logo.svg" alt="logo" />
           </div>
           {/* hamburger */}
-          <div className="flex lg:hidden mr-[10%] relative">
+          <div className="flex md:hidden mr-[10%] relative">
             <img className="flex" src="shared/icon-hamburger.svg" alt=""/>
           <img  className="hidden"src="shared/icon-close.svg" alt="" />
           </div>
           {/* horrizontal line */}
           <div className=" hidden lg:flex w-[38%] h-[1px] bg-primaryWhite ml-[5rem] absolute right-[55%] z-20"></div>
           {/* nav links */}
-          <nav className="hidden lg:flex w-[62%] h-[6rem] right-0  justify-center items-center gap-[3rem]  backdrop-blur-[50px] ">
+          <nav className="hidden md:flex w-[62%] h-[6rem] right-0  justify-center items-center gap-[3rem]  backdrop-blur-[50px] ">
             {renderLink}
           </nav>
         </header>

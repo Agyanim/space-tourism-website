@@ -4,11 +4,13 @@
     background-image: url("/home/background-home-mobile.jpg") ;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 @media( min-width:765px) {
     .home-container{
         background-image: url("/home/background-home-tablet.jpg") ;
+
     }
     
 }
