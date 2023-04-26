@@ -61,8 +61,8 @@ useEffect(() => {
           </h5>
         </section>
         {/* page content */}
-        <section className="absolute mt-52">{crewList[selector]}</section>
-        <section className=" absolute flex gap-2 top-[90%] left-[8.5%]">
+        <section className="absolute lg:mt-52">{crewList[selector]}</section>
+        <section className=" absolute flex gap-2 lg:top-[90%] lg:left-[8.5%]">
           <input className="crewSelector" ref={firstSelectorRef} type="radio" name="select" id={0}  onClick={selectHandler}/>
           <input className="crewSelector" type="radio" name="select" id={1} onClick={selectHandler} />
           <input className="crewSelector" type="radio" name="select" id={2} onClick={selectHandler} />

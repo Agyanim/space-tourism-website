@@ -12,13 +12,16 @@
     @apply text-[5rem] lg:text-[8.5rem] font-Bellefair;
   }
   h2 {
-    @apply text-[4rem] font-Bellefair;
+    @apply text-[4rem] font-Bellefair ;
   }
   h3 {
     @apply text-base lg:text-[1.5rem] font-Bellefair;
   }
   h5 {
     @apply text-base lg:text-xl font-BarlowCondensed tracking-[3px] lg:tracking-[4.7px] text-primaryWhite uppercase;
+  }
+  p{
+    @apply font-Barlow text-lg leading-8
   }
 
   :root {
@@ -47,10 +50,10 @@
     opacity: 1;
   }
   .technology-lbl{
-    @apply  w-16 h-16 rounded-full text-center flex justify-center items-center font-bold 
+    @apply  w-[4.5rem] h-[4.5rem] rounded-full text-center flex justify-center items-center font-bold cursor-pointer
   }
   .destination-lbl{
-    @apply  border-white  pb-2 text-primaryGray font-BarlowCondensed 
+    @apply  border-white  pb-2 text-primaryGray font-BarlowCondensed cursor-pointer
   }
 }
 
