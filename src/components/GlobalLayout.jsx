@@ -47,7 +47,7 @@ const GlobalLayout = () => {
   });
 
   return (
-    <div className=" h-screen bg-slate-500">
+    <div className="relative h-screen bg-slate-500">
       <section className="flex justify-end absolute right-0 top-[2rem] md:top-0 lg:top-[2rem] z-20">
         <header className="flex w-[95Vw] items-center justify-between relative ml-0">
           {/* logo */}
@@ -69,14 +69,14 @@ const GlobalLayout = () => {
         </header>
       </section>
 
-      <div className="w-full absolute z-20 right-[-40%] top-[15%] ">
+      <div className="w-full absolute z-20 ">
 {/* mobile view menu */}
 <div>
 
-<Menu/>
+{/* <Menu/> */}
 </div>
 </div>
-      <Outlet/>
+      <Outlet/> 
     </div>
   );
 };
