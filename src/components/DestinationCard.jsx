@@ -9,7 +9,7 @@ const DestinationCard = ({ Image, Name, Description, Distance, Travel }) => {
         </section>
         <section className="lg:w-[32%] text-primaryWhite">
           <div className="relative top-[4rem] lg:mt-5 lg:w-full ">
-            <h1 className=" text-[2rem] md:text-[4rem] uppercase text-center md:text-left">{Name}</h1>
+            <h1 className=" text-[4rem] md:text-[4rem] uppercase text-center md:text-left">{Name}</h1>
             <p className=" mb-10 text-base px-4  md:text-lg text-primaryGray text-center md:text-left">{Description}</p>
           </div>
           {/* horizontal line */}
