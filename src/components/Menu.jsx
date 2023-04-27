@@ -41,7 +41,7 @@ const Menu = () => {
       });
     
   return (
-    <div className='absolute -top-20'>{renderLink}</div>
+    <div className='absolute translate-x-[15rem] translate-y-[5rem]'>{renderLink}</div>
   )
 }
 

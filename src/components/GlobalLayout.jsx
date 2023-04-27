@@ -3,8 +3,8 @@ import { NavLink, Outlet } from "react-router-dom";
 import Menu from "./Menu";
 
 const GlobalLayout = () => {
-    const activeLink=" border-b-4 border-white flex py-7"
-    const normalLink="flex hover:border-b-2 py-7 "
+  const activeLink = " border-b-4 border-white flex py-7";
+  const normalLink = "flex hover:border-b-2 py-7 ";
 
   const navLinks = [
     {
@@ -36,11 +36,14 @@ const GlobalLayout = () => {
         className="font-BarlowCondensed text-[16px] text-primaryWhite leading-10 border-white/50  transition-all duration-[0.1s]"
         key={id}
       >
-        <NavLink  to={link.Url} className={({isActive})=>(
-          isActive? activeLink :normalLink
-        )
-        }>
-        <span className="mr-3 font-extrabold opacity-100 md:hidden lg:flex">{link.id}</span> <span className="opacity-50">{link.Name}</span>
+        <NavLink
+          to={link.Url}
+          className={({ isActive }) => (isActive ? activeLink : normalLink)}
+        >
+          <span className="mr-3 font-extrabold opacity-100 md:hidden lg:flex">
+            {link.id}
+          </span>{" "}
+          <span className="opacity-50">{link.Name}</span>
         </NavLink>
       </div>
     );
@@ -52,16 +55,19 @@ const GlobalLayout = () => {
         <header className="flex w-[95Vw] items-center justify-between relative ml-0">
           {/* logo */}
           <div className="w-100% ">
-            <img className="w-[40px] md:w-[48px]" src="shared/logo.svg" alt="logo" />
+            <img
+              className="w-[40px] md:w-[48px]"
+              src="shared/logo.svg"
+              alt="logo"
+            />
           </div>
           {/* hamburger */}
           <div className="flex md:hidden mr-[10%] relative">
-            <img className="flex" src="shared/icon-hamburger.svg" alt=""/>
-          <img  className="hidden"src="shared/icon-close.svg" alt="" />
+            <img className="flex" src="shared/icon-hamburger.svg" alt="" />
+            <img className="hidden" src="shared/icon-close.svg" alt="" />
           </div>
           {/* horrizontal line */}
-          <div className=" hidden lg:flex w-[38%] h-[1px] bg-primaryWhite ml-[5rem] absolute right-[55%] z-20">
-          </div>
+          <div className=" hidden lg:flex w-[38%] h-[1px] bg-primaryWhite ml-[5rem] absolute right-[55%] z-20"></div>
           {/* rendering main nav links */}
           <nav className="hidden md:flex w-[62%] h-[6rem] right-0  justify-center items-center  backdrop-blur-[50px] gap-10">
             {renderLink}
@@ -70,13 +76,10 @@ const GlobalLayout = () => {
       </section>
 
       <div className="w-full absolute z-20 ">
-{/* mobile view menu */}
-<div>
-
-{/* <Menu/> */}
-</div>
-</div>
-      <Outlet/> 
+        {/* mobile view menu */}
+          <Menu />
+      </div>
+      <Outlet />
     </div>
   );
 };
