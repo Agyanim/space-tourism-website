@@ -44,13 +44,13 @@ const Destination = () => {
   return (
     <>
       <div className="destinaion-container container-wrapper">
-        <div className=" absolute top-[7rem] lg:top-[10rem] lg:left-36 lg:w-1/3 w-[90%] left-[10%]">
-          <h5 className="">
+        <div className="  lg:absolute translate-y-[4.5rem] lg:top-[10rem] lg:left-36 lg:w-1/3 w-[65%] m-auto text-center ">
+          <h5 className="text-[0.7rem]">
             <span className="mr-5 text-primaryWhite opacity-50">{newPageTitles[0].id}</span>
             {newPageTitles[0].title}
           </h5>
         </div>
-        <div className="relative top-[10rem]">
+        <div className="relative top-[12%] md:top-[10rem]">
           <div ><DestinationSelectorCard/></div>
           <section >{cardList[destinationSelector]}</section>
         </div>

@@ -7,11 +7,11 @@ const DestinationSelectorCard = () => {
     const selectIdHandler = (event) => {
         setDestinationSelector(event.target.id);
       };
-const active="destination-lbl border-b-4 "
+const active="destination-lbl border-b-4 text-primaryWhite "
 const normal="destination-lbl"
 
   return (
-    <div className='relative top-[17re] md:top-0 flex gap-5 ml-[18%] lg:gap-14 lg:w-1/4 lg:ml-[59.5%]'>
+    <div className='md:relative translate-y-[12rem] md:top-0 flex justify-center md:justify-start gap-7 w-[70%] m-auto lg:gap-14 lg:w-1/4 lg:ml-[59.5%]'>
         <div>
             <label className={+destinationSelector===0? active:normal} htmlFor="0">{menuData[0]}</label>
             <input className="hidden" type="radio" name='selector' id='0' onClick={selectIdHandler} />

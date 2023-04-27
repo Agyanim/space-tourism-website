@@ -41,7 +41,7 @@ const Menu = () => {
       });
     
   return (
-    <div className='fixed translate-x-[15rem] translate-y-[4rem]'>{renderLink}</div>
+    <div className='fixed translate-x-[15rem] translate-y-[4rem] '>{renderLink}</div>
   )
 }
 
