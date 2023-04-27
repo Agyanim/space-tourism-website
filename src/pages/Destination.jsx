@@ -44,8 +44,8 @@ const Destination = () => {
   return (
     <>
       <div className="destinaion-container container-wrapper">
-        <div className="  lg:absolute translate-y-[4.5rem] lg:top-[10rem] lg:left-36 lg:w-1/3 w-[65%] m-auto text-center ">
-          <h5 className="text-[0.7rem]">
+        <div className="  lg:absolute md:translate-y-0 translate-y-[4.5rem] lg:top-[10rem]  md:left-36 lg:w-1/3 w-[65%] m-auto text-center md:text-left ">
+          <h5 className="text-[0.7rem] md:text-lg">
             <span className="mr-5 text-primaryWhite opacity-50">{newPageTitles[0].id}</span>
             {newPageTitles[0].title}
           </h5>

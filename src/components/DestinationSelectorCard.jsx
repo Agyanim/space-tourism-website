@@ -11,7 +11,7 @@ const active="destination-lbl border-b-4 text-primaryWhite tracking-[0.2rem]"
 const normal="destination-lbl tracking-[0.2rem]"
 
   return (
-    <div className='md:relative translate-y-[12rem] md:top-0 flex justify-center md:justify-start gap-7 w-[70%] m-auto lg:gap-14 lg:w-1/4 lg:ml-[59.5%]'>
+    <div className='md:relative translate-y-[12rem] md:translate-y-0 md:top-0 flex justify-center md:justify-start gap-7 w-[70%] m-auto md:gap-5 lg:w-1/4 lg:ml-[59.5%]'>
         <div>
             <label className={+destinationSelector===0? active:normal} htmlFor="0">{menuData[0]}</label>
             <input className="hidden tracking-wid" type="radio" name='selector' id='0' onClick={selectIdHandler} />
