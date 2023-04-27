@@ -40,24 +40,12 @@ const Destination = () => {
     />,
   ];
 
-  // const list = menuData.map((menu, i) => {
-  //   return (
-  //     <button
-  //       className="text-[#D0D6F9] active:border-b-2 border-white"
-  //       key={i}
-  //       id={i}
-  //       onClick={selectId}
-  //     >
-  //       {menu}
-  //     </button>
-  //   );
-  // });
 
   return (
     <>
       <div className="destinaion-container container-wrapper">
-        <div className=" relative top-[10rem]">
-          <h5 className="relative  left-36 w-1/3">
+        <div className=" absolute top-[7rem] lg:top-[10rem] lg:left-36 lg:w-1/3 w-[90%] left-[10%]">
+          <h5 className="">
             <span className="mr-5 text-primaryWhite opacity-50">{newPageTitles[0].id}</span>
             {newPageTitles[0].title}
           </h5>

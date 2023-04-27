@@ -3,8 +3,8 @@ import { NavLink, Outlet } from "react-router-dom";
 import Menu from "./Menu";
 
 const GlobalLayout = () => {
-    const activeLink=" py-9  border-b-4 border-white"
-    const normalLink=""
+    const activeLink=" border-b-4 border-white flex py-7"
+    const normalLink="flex hover:border-b-2 py-7 "
 
   const navLinks = [
     {
@@ -31,8 +31,9 @@ const GlobalLayout = () => {
 
   const renderLink = navLinks.map((link, id) => {
     return (
+      // Main navigation links
       <div
-        className="font-BarlowCondensed text-[16px] text-primaryWhite leading-10 border-white/50 hover:border-b-2 py-7 transition-all duration-[0.1s]"
+        className="font-BarlowCondensed text-[16px] text-primaryWhite leading-10 border-white/50  transition-all duration-[0.1s]"
         key={id}
       >
         <NavLink  to={link.Url} className={({isActive})=>(
@@ -46,7 +47,7 @@ const GlobalLayout = () => {
   });
 
   return (
-    <div className="h-screen bg-slate-500">
+    <div className=" h-screen bg-slate-500">
       <section className="flex justify-end absolute right-0 top-[2rem] md:top-0 lg:top-[2rem] z-20">
         <header className="flex w-[95Vw] items-center justify-between relative ml-0">
           {/* logo */}
@@ -59,16 +60,21 @@ const GlobalLayout = () => {
           <img  className="hidden"src="shared/icon-close.svg" alt="" />
           </div>
           {/* horrizontal line */}
-          <div className=" hidden lg:flex w-[38%] h-[1px] bg-primaryWhite ml-[5rem] absolute right-[55%] z-20"></div>
-          {/* nav links */}
-          <nav className="hidden md:flex w-[62%] h-[6rem] right-0  justify-center items-center gap-[3rem]  backdrop-blur-[50px] ">
+          <div className=" hidden lg:flex w-[38%] h-[1px] bg-primaryWhite ml-[5rem] absolute right-[55%] z-20">
+          </div>
+          {/* rendering main nav links */}
+          <nav className="hidden md:flex w-[62%] h-[6rem] right-0  justify-center items-center  backdrop-blur-[50px] gap-10">
             {renderLink}
           </nav>
         </header>
       </section>
+
       <div className="w-full absolute z-20 right-[-40%] top-[15%] ">
+{/* mobile view menu */}
+<div>
 
 <Menu/>
+</div>
 </div>
       <Outlet/>
     </div>

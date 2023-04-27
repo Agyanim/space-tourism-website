@@ -11,7 +11,7 @@ const active="destination-lbl border-b-4 "
 const normal="destination-lbl"
 
   return (
-    <div className='flex gap-10 w-1/4 ml-[59.5%]'>
+    <div className='relative top-[17rem] md:top-0 flex gap-5 ml-[18%] lg:gap-14 lg:w-1/4 lg:ml-[59.5%]'>
         <div>
             <label className={+destinationSelector===0? active:normal} htmlFor="0">{menuData[0]}</label>
             <input className="hidden" type="radio" name='selector' id='0' onClick={selectIdHandler} />

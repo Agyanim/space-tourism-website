@@ -27,7 +27,7 @@ const Menu = () => {
     const renderLink = navLinks.map((link, id) => {
         return (
           <div
-            className=" hidden font-BarlowCondensed text-[16px] text-primaryWhite bg-white w-[10rem] "
+            className="flex md:hidden  font-BarlowCondensed text-[16px] text-primaryWhite bg-white w-[10rem] "
             key={link.id}
           >
             <NavLink  to={link.Url} className={({isActive})=>(
@@ -41,7 +41,7 @@ const Menu = () => {
       });
     
   return (
-    <div>{renderLink}</div>
+    <div className='absolute -top-20'>{renderLink}</div>
   )
 }
 
