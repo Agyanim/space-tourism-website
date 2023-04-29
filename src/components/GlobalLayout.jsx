@@ -90,7 +90,7 @@ const GlobalLayout = () => {
         </header>
       </section>
 
-      <div className={toggleMenu?"w-full absolute z-20 hidden transition-all ml-0":"w-full absolute z-10 flex ml-[30%] transition-all duration-75 ease-out"}>
+      <div className={toggleMenu?"w-full absolute z-20 ml-[100%] transition-all duration-300 ease-in ":"w-full absolute z-10 flex ml-[30%] transition-all duration-500 ease-out"}>
         {/* mobile view menu */}
         <Menu />
       </div>
