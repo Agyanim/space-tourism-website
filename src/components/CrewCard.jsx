@@ -10,7 +10,7 @@ const CrewCard = ({ Name, Role, Bio, Image }) => {
             {Role}
           </h4>
           <h2 className="uppercase text-[1.4rem] md:text-[2.5rem] mb-5 ">{Name}</h2>
-          <p className="opacity-50 text-[1rem] md:w-[88.5%]">{Bio}</p>
+          <p className="opacity-50 text-[1rem] md:w-[88.5%] text-center">{Bio}</p>
         </section>
         {/* horizontal line */}
         <div className="w-full flex items-center justify-center md:hidden">
