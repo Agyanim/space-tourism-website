@@ -28,7 +28,6 @@
     --primary-dark: #0b0d17;
     --primary-gray: #d0d6f9;
     --primary-white: #ffffff;
-    /* --primary-purple: #D0D6F9; */
   }
 
   .container-wrapper {
@@ -36,18 +35,12 @@
   }
 
   .crewSelector{
-    /* @apply p-2 rounded-3xl cursor-pointer bg-gray-500 opacity-20 ; */
     appearance: none;
     padding: 8px;
     border-radius: 50%;
     cursor: pointer;
-    accent-color: white;
-    background-color:gray;
+    background-color:gray; 
     opacity: 0.2;
-  }
-  .crewSelector:checked {
-    background-color: white;
-    opacity: 1;
   }
   .technology-lbl{
     @apply w-[2rem] h-[2rem] lg:w-[4.5rem] lg:h-[4.5rem] rounded-full text-center flex justify-center items-center font-bold cursor-pointer

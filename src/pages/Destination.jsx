@@ -1,5 +1,5 @@
-import React from "react";
-import {  pageTitles } from "../data/data";
+import React, { useEffect, useState } from "react";
+import { pageTitles } from "../data/data";
 import DestinationCard from "../components/DestinationCard";
 import { data } from "../data/data";
 import DestinationSelectorCard from "../components/DestinationSelectorCard";
@@ -8,12 +8,10 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 AOS.init();
 
-
-
 const Destination = () => {
   const { destinations } = data;
   const newPageTitles = pageTitles;
-  const{selector}=selectorStore()
+  const { selector, setIncreament, resetSelector } = selectorStore();
 
   const cardList = [
     <DestinationCard
@@ -46,23 +44,38 @@ const Destination = () => {
     />,
   ];
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      selector === 0 || selector < cardList.length - 1
+        ? setIncreament()
+        : resetSelector();
+    }, 6000);
+    return () => {
+      clearInterval(interval);
+    };
+  }, [selector]);
 
   return (
     <>
       <div className="destinaion-container container-wrapper">
         <div className="page-title">
-          <h5 className="text-[0.8rem] md:text-lg"
-          data-aos="fade-right"
-          data-aos-duration="1000"
-          data-aos-easing="ease-out"
+          <h5
+            className="text-[0.8rem] md:text-lg"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-easing="ease-out"
           >
-            <span className="mr-5 text-primaryWhite opacity-50">{newPageTitles[0].id}</span>
+            <span className="mr-5 text-primaryWhite opacity-50">
+              {newPageTitles[0].id}
+            </span>
             {newPageTitles[0].title}
           </h5>
         </div>
         <div className="relative top-[9%] md:top-[10rem]">
-          <div ><DestinationSelectorCard/></div>
-          <section >{cardList[selector]}</section>
+          <div>
+            <DestinationSelectorCard />
+          </div>
+          <section>{cardList[selector]}</section>
         </div>
       </div>
     </>

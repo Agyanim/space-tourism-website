@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { pageTitles, data } from "../data/data";
 import TechnologyCard from "../components/TechnologyCard";
 import { selectorStore } from "../context/store";
@@ -25,7 +25,18 @@ const technologyList = [
 
 
 const Technology = () => {
-  const {selector}=selectorStore();
+  const{selector, setIncreament, resetSelector }=selectorStore()
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      selector === 0 || selector < technologyList.length - 1
+        ? setIncreament()
+        : resetSelector();
+    }, 6000);
+    return () => {
+      clearInterval(interval);
+    };
+  }, [selector]);
 
   return (
     <>

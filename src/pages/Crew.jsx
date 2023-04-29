@@ -38,8 +38,18 @@ const crewList = [
   />,
 ];
 const Crew = () => {
-  const{selector }=selectorStore()
+  const{selector, setIncreament, resetSelector }=selectorStore()
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      selector === 0 || selector < crewList.length - 1
+        ? setIncreament()
+        : resetSelector();
+    }, 6000);
+    return () => {
+      clearInterval(interval);
+    };
+  }, [selector]);
 
 
   return (
