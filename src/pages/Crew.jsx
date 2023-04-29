@@ -1,6 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import { pageTitles, data } from "../data/data";
 import CrewCard from "../components/CrewCard";
+import CrewSlectorCard from "../components/CrewSlectorCard";
+import { selectorStore } from "../context/store";
 
 const newPageTitles = pageTitles;
 
@@ -33,40 +35,25 @@ const crewList = [
   />,
 ];
 const Crew = () => {
-  const [selector, Setselector] = useState(0);
+  const{crewSelector }=selectorStore()
 
-  const selectHandler = (e) => {
-    Setselector(e.target.id);
-  };
-
-const firstSelectorRef = useRef(null)
-
-useEffect(() => {
-  firstSelectorRef.current.checked="true";
-
-  return () => {
-    firstSelectorRef.current.checked="false";
-  }
-}, [])
 
 
   return (
     <>
       <div className="crew-container container-wrapper relative">
         {/* page title */}
-        <section className="absolute top-[10rem]">
-          <h5 className="relative  left-36">
+        <section className="page-title">
+          <h5 className="text-[0.7rem] md:text-lg">
             <span className="mr-5 opacity-50">{newPageTitles[1].id}</span>
             {newPageTitles[1].title}
           </h5>
         </section>
         {/* page content */}
-        <section className="absolute lg:mt-52">{crewList[selector]}</section>
-        <section className=" absolute flex gap-2 lg:top-[90%] lg:left-[8.5%]">
-          <input className="crewSelector" ref={firstSelectorRef} type="radio" name="select" id={0}  onClick={selectHandler}/>
-          <input className="crewSelector" type="radio" name="select" id={1} onClick={selectHandler} />
-          <input className="crewSelector" type="radio" name="select" id={2} onClick={selectHandler} />
-          <input className="crewSelector" type="radio" name="select" id={3} onClick={selectHandler} />
+        <section className="absolute top-[10rem] md:mt-5">{crewList[crewSelector]}</section>
+        {/* selector */}
+        <section>
+          <CrewSlectorCard/>
         </section>
       </div>
     </>

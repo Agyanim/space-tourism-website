@@ -30,8 +30,8 @@ const Technology = () => {
   return (
     <>
       <div className="technology-container container-wrapper">
-        <section className="absolute top-[10rem]">
-          <h5 className="relative  left-36">
+        <section className="page-title">
+          <h5 className="text-[0.7rem] md:text-lg">
             <span className="mr-5">{newPageTitles[2].id}</span>
             {newPageTitles[2].title}
           </h5>
