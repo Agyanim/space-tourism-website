@@ -90,7 +90,10 @@ const GlobalLayout = () => {
         </header>
       </section>
 
-      <div className={toggleMenu?"w-full absolute z-20 ml-[100%] transition-all duration-300 ease-in ":"w-full absolute z-10 flex ml-[30%] transition-all duration-500 ease-out"}>
+      <div className={toggleMenu?"w-full absolute z-20 ml-[100%] transition-all duration-300 ease-in ":"w-full absolute z-10 flex ml-[30%] transition-all duration-500 ease-out"}
+
+      onMouseLeave={togleMenuHandler}
+      >
         {/* mobile view menu */}
         <Menu />
       </div>
