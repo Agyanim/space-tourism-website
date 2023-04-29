@@ -50,7 +50,7 @@ const Destination = () => {
             {newPageTitles[0].title}
           </h5>
         </div>
-        <div className="relative top-[12%] md:top-[10rem]">
+        <div className="relative top-[9%] md:top-[10rem]">
           <div ><DestinationSelectorCard/></div>
           <section >{cardList[destinationSelector]}</section>
         </div>
