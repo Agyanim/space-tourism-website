@@ -2,20 +2,18 @@ import React, { useEffect, useRef } from "react";
 import { selectorStore } from "../context/store";
 
 const CrewSlectorCard = () => {
-  const { setCrewSelector } = selectorStore();
+  const { setSelector } = selectorStore();
 
   const selectHandler = (e) => {
-    setCrewSelector(e.target.id);
+    setSelector(e.target.id);
+    console.log(e.target.id);
   };
 
-  const firstSelectorRef = useRef(null);
+  const firstSelectorRef = useRef();
 
   useEffect(() => {
     firstSelectorRef.current.checked = "true";
 
-    return () => {
-      firstSelectorRef.current.checked = "false";
-    };
   }, []);
 
   return (
@@ -26,28 +24,28 @@ const CrewSlectorCard = () => {
           ref={firstSelectorRef}
           type="radio"
           name="select"
-          id={0}
+          id="0"
           onClick={selectHandler}
         />
         <input
           className="crewSelector"
           type="radio"
           name="select"
-          id={1}
+          id="1"
           onClick={selectHandler}
         />
         <input
           className="crewSelector"
           type="radio"
           name="select"
-          id={2}
+          id="2"
           onClick={selectHandler}
         />
         <input
           className="crewSelector"
           type="radio"
           name="select"
-          id={3}
+          id="3"
           onClick={selectHandler}
         />
       </section>

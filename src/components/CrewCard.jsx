@@ -3,14 +3,14 @@ import React, { useState } from "react";
 const CrewCard = ({ Name, Role, Bio, Image }) => {
   return (
     <>
-      <div className="flex flex-col-reverse md:flex-row justify-center items-center  md:mt-[-3.8rem]  md:gap-[10rem] lg:w-[95%]">
+      <div className="flex flex-col-reverse md:flex-row justify-center items-center  md:mt-[-3.8rem]  md:gap-[5rem] lg:gap-[7rem] lg:w-[100%]">
         {/* content wrapper */}
-        <section className="text-primaryWhite w-[90%] md:w-[35.5%] flex  flex-col justify-center items-center md:items-start mt-[6rem] md:mt-0">
+        <section className="text-primaryWhite w-[90%] md:w-[35.5%] flex  flex-col justify-center items-center lg:justify-start  lg:items-start mt-[6rem] lg:mt-0">
           <h4 className="text-primaryWhite opacity-50 uppercase mix-blend-normal mb-2 text-base md:text-lg tracking-[0.2rem]">
             {Role}
           </h4>
           <h2 className="uppercase text-[1.4rem] md:text-[2.5rem] mb-5 ">{Name}</h2>
-          <p className="opacity-50 text-[1rem] md:w-[88.5%] text-center">{Bio}</p>
+          <p className="opacity-50 text-[1rem] md:w-[88.5%] lg:w-[80%] text-primaryGray">{Bio}</p>
         </section>
         {/* horizontal line */}
         <div className="w-full flex items-center justify-center md:hidden">
@@ -18,7 +18,7 @@ const CrewCard = ({ Name, Role, Bio, Image }) => {
         </div>
         {/* hero image */}
         <section
-          className="w-[15rem] h-[15rem] lg:w-[30rem] lg:h-[30rem] mt-[-2rem] md:mt-[0.5rem] ml-[3rem]"
+          className="w-[15rem] h-[15rem] lg:w-[28rem] lg:h-[28rem] mt-[-2rem] md:mt-[0.5rem] lg:mt-[3rem] ml-[3rem]"
           style={{
             backgroundColor: "transparent",
             backgroundImage: `url(${Image})`,
@@ -29,7 +29,6 @@ const CrewCard = ({ Name, Role, Bio, Image }) => {
           }}
         >
 
-          {/* <img src={Image} alt="" srcset="Crew image" /> */}
         </section>
       </div>
     </>

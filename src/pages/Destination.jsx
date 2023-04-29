@@ -1,5 +1,5 @@
 import React from "react";
-import { menuData, pageTitles } from "../data/data";
+import {  pageTitles } from "../data/data";
 import DestinationCard from "../components/DestinationCard";
 import { data } from "../data/data";
 import DestinationSelectorCard from "../components/DestinationSelectorCard";
@@ -7,7 +7,7 @@ import { selectorStore } from "../context/store";
 const Destination = () => {
   const { destinations } = data;
   const newPageTitles = pageTitles;
-  const{destinationSelector}=selectorStore()
+  const{selector}=selectorStore()
 
   const cardList = [
     <DestinationCard
@@ -52,7 +52,7 @@ const Destination = () => {
         </div>
         <div className="relative top-[9%] md:top-[10rem]">
           <div ><DestinationSelectorCard/></div>
-          <section >{cardList[destinationSelector]}</section>
+          <section >{cardList[selector]}</section>
         </div>
       </div>
     </>

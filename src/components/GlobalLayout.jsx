@@ -1,34 +1,38 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink, Outlet } from "react-router-dom";
 import Menu from "./Menu";
+
+const navLinks = [
+  {
+    id: "00",
+    Name: "HOME",
+    Url: "/",
+  },
+  {
+    id: "01",
+    Name: "DESTINATION",
+    Url: "/destination",
+  },
+  {
+    id: "02",
+    Name: "CREW",
+    Url: "/crew",
+  },
+  {
+    id: "03",
+    Name: "TECHNOLOGY",
+    Url: "/technology",
+  },
+];
 
 const GlobalLayout = () => {
   const activeLink = " border-b-4 border-white flex py-7";
   const normalLink = "flex hover:border-b-2 py-7 ";
+  const [toggleMenu, settoggleMenu] = useState(true);
 
-  const navLinks = [
-    {
-      id: "00",
-      Name: "HOME",
-      Url: "/",
-    },
-    {
-      id: "01",
-      Name: "DESTINATION",
-      Url: "/destination",
-    },
-    {
-      id: "02",
-      Name: "CREW",
-      Url: "/crew",
-    },
-    {
-      id: "03",
-      Name: "TECHNOLOGY",
-      Url: "/technology",
-    },
-  ];
-
+  const togleMenuHandler=()=>{
+    settoggleMenu(!toggleMenu)
+  }
   const renderLink = navLinks.map((link, id) => {
     return (
       // Main navigation links
@@ -42,7 +46,7 @@ const GlobalLayout = () => {
         >
           <span className="mr-3 font-extrabold opacity-100 md:hidden lg:flex">
             {link.id}
-          </span>{" "}
+          </span>
           <span className="opacity-50">{link.Name}</span>
         </NavLink>
       </div>
@@ -62,9 +66,20 @@ const GlobalLayout = () => {
             />
           </div>
           {/* hamburger */}
-          <div className="flex md:hidden mr-[10%] relative">
-            <img className="flex" src="shared/icon-hamburger.svg" alt="" />
-            <img className="hidden" src="shared/icon-close.svg" alt="" />
+          <div className=" flex absolute  md:hidden left-[80%]">
+            {/* open menu icon */}
+            <div className={toggleMenu? " flex":" hidden"}>
+              <img className=" cursor-pointer" src="shared/icon-hamburger.svg" alt="open icon"  onClick={togleMenuHandler}/>
+            </div>
+            {/* close menu icon */}
+            <div className={toggleMenu? " hidden  ":"  flex z-40"}>
+              <img
+                className=" cursor-pointer"
+                src="shared/icon-close.svg"
+                alt="close icon"
+                onClick={togleMenuHandler}
+              />
+            </div>
           </div>
           {/* horrizontal line */}
           <div className=" hidden lg:flex w-[38%] h-[1px] bg-primaryWhite ml-[5rem] absolute right-[55%] z-20"></div>
@@ -75,9 +90,9 @@ const GlobalLayout = () => {
         </header>
       </section>
 
-      <div className="w-full absolute z-20 ">
+      <div className={toggleMenu?"w-full absolute z-20 hidden transition-all ml-0":"w-full absolute z-10 flex ml-[30%] transition-all duration-75 ease-out"}>
         {/* mobile view menu */}
-          <Menu />
+        <Menu />
       </div>
       <Outlet />
     </div>

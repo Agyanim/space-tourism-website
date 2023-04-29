@@ -35,7 +35,7 @@ const crewList = [
   />,
 ];
 const Crew = () => {
-  const{crewSelector }=selectorStore()
+  const{selector }=selectorStore()
 
 
 
@@ -50,7 +50,7 @@ const Crew = () => {
           </h5>
         </section>
         {/* page content */}
-        <section className="absolute top-[10rem] md:mt-5">{crewList[crewSelector]}</section>
+        <section className="absolute top-[10rem] md:mt-5">{crewList[+selector]}</section>
         {/* selector */}
         <section>
           <CrewSlectorCard/>

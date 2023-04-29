@@ -2,22 +2,22 @@ import React from 'react'
 import { NavLink } from 'react-router-dom';
 const navLinks = [
     {
-      id:1,
+      id:"00",
       Name: "HOME",
       Url: "/",
     },
     {
-      id:2,
+      id:"01",
       Name: "DESTINATION",
       Url: "/destination",
     },
     {
-      id:3,
+      id:"02",
       Name: "CREW",
       Url: "/crew",
     },
     {
-      id:4,
+      id:"03",
       Name: "TECHNOLOGY",
       Url: "/technology",
     },
@@ -27,13 +27,14 @@ const Menu = () => {
     const renderLink = navLinks.map((link, id) => {
         return (
           <div
-            className="flex md:hidden  font-BarlowCondensed text-[16px] text-primaryWhite bg-white w-[10rem] "
-            key={link.id}
+            className="  md:hidden font-BarlowCondensed text-base tracking-[0.18rem] text-primaryWhite"
+            key={id}
           >
             <NavLink  to={link.Url} className={({isActive})=>(
-              isActive? "text-blue-400" :"text-black"
+              isActive? "text-blue-400" :"text-primaryWhite"
             )
             }>
+              <span className='mr-5 font-bold'>{link.id}</span>
             {link.Name}
             </NavLink>
           </div>
@@ -41,7 +42,10 @@ const Menu = () => {
       });
     
   return (
-    <div className='fixed translate-x-[15rem] translate-y-[4rem] '>{renderLink}</div>
+    <div className=''>
+
+      <div className=' ml-[24re]   w-[70%] h-screen fixed bg-black/40 backdrop-blur-2xl flex flex-col gap-10 pt-[30%] pl-10'>{renderLink}</div>
+    </div>
   )
 }
 
