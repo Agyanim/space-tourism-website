@@ -4,12 +4,11 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 AOS.init();
 
-
 const TechnologyCard = ({ Name, Image, Description }) => {
   return (
     <div className="flex justify-end items-center relative top-[10rem] lg:top-[12rem] w-screen">
       <div className="flex flex-col-reverse md:flex-row justify-end items-center w-full">
-        <section className="flex lg:flex-row flex-col mt-[2rem] md:mt-0 lg:mr-[16rem] w-[90%] lg:w-[44.9%] justify-center items-center "> 
+        <section className="flex lg:flex-row flex-col mt-[2rem] md:mt-0 lg:mr-[16rem] w-[90%] lg:w-[44.9%] justify-center items-center ">
           <section className="">
             <TechnologySectorCard />
           </section>
@@ -19,7 +18,15 @@ const TechnologyCard = ({ Name, Image, Description }) => {
               <h2 className="text-[2rem] lg:text-[2.5rem] uppercase mb-4 text-primaryWhite font-BarlowCondensed">
                 {Name}
               </h2>
-              <p className="text-[0.95rem]">{Description}</p>
+              <p
+                className="text-[0.95rem]"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="1500"
+                data-aos-easing="ease-out"
+              >
+                {Description}
+              </p>
             </div>
           </section>
         </section>

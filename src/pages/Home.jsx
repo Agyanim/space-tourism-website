@@ -18,20 +18,20 @@ const Home = () => {
               >
                 SO, YOU WANT TO TRAVEL TO
               </h5>
-              <h1 className="md:text-[10rem] lg:text-[9rem] my-[1rem] ">
+              <h1 className="md:text-[10rem] lg:text-[9rem] my-[1rem] lg:my-0">
                 SPACE
               </h1>
               <p
                 className="text-[0.75rem] leading-6 text-center md:text-[1.2rem] md:px-[6rem] md:leading-10 lg:text-left lg:text-lg px-4 lg:px-0 text-primaryGray lg:mt-[-2rem]"
                 data-aos="fade-up"
                 data-aos-duration="1000"
-                data-aos-delay="1000"
-                data-aos-easing="ease-in-out"
+                data-aos-delay="1500"
+                data-aos-easing="ease-out"
               >
                 Let’s face it; if you want to go to space, you might as well
                 genuinely go to outer space and not hover kind of on the edge of
                 it. Well sit back, and relax because we’ll give you a truly out
-                of this world experience! data-aos="fade-up"
+                of this world experience!
               </p>
             </section>
             <section className=" lg:w-[38%] xl:w-[50%]  flex justify-center items-center">

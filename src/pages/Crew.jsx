@@ -57,7 +57,8 @@ const Crew = () => {
           </h5>
         </section>
         {/* page content */}
-        <section className="absolute top-[10rem] md:mt-5">{crewList[+selector]}</section>
+        <section className="absolute top-[10rem] md:mt-5"
+        >{crewList[+selector]}</section>
         {/* selector */}
         <section>
           <CrewSlectorCard/>
