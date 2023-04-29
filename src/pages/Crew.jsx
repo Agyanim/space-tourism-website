@@ -3,11 +3,14 @@ import { pageTitles, data } from "../data/data";
 import CrewCard from "../components/CrewCard";
 import CrewSlectorCard from "../components/CrewSlectorCard";
 import { selectorStore } from "../context/store";
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
+
 
 const newPageTitles = pageTitles;
 
 const { crew } = data;
-console.log(crew);
 const crewList = [
   <CrewCard
     Role={crew[0].role}
@@ -44,7 +47,11 @@ const Crew = () => {
       <div className="crew-container container-wrapper relative">
         {/* page title */}
         <section className="page-title">
-          <h5 className="text-[1.2rem] md:text-lg">
+          <h5 className="text-[1.2rem] md:text-lg"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          data-aos-easing="ease-out"
+          >
             <span className="mr-5 opacity-50">{newPageTitles[1].id}</span>
             {newPageTitles[1].title}
           </h5>

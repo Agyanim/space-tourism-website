@@ -4,6 +4,12 @@ import DestinationCard from "../components/DestinationCard";
 import { data } from "../data/data";
 import DestinationSelectorCard from "../components/DestinationSelectorCard";
 import { selectorStore } from "../context/store";
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
+
+
+
 const Destination = () => {
   const { destinations } = data;
   const newPageTitles = pageTitles;
@@ -45,7 +51,11 @@ const Destination = () => {
     <>
       <div className="destinaion-container container-wrapper">
         <div className="page-title">
-          <h5 className="text-[0.8rem] md:text-lg">
+          <h5 className="text-[0.8rem] md:text-lg"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          data-aos-easing="ease-out"
+          >
             <span className="mr-5 text-primaryWhite opacity-50">{newPageTitles[0].id}</span>
             {newPageTitles[0].title}
           </h5>

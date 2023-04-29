@@ -1,12 +1,15 @@
 import React, { useEffect, useRef } from "react";
 import { selectorStore } from "../context/store";
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
+
 
 const CrewSlectorCard = () => {
   const { setSelector } = selectorStore();
 
   const selectHandler = (e) => {
     setSelector(e.target.id);
-    console.log(e.target.id);
   };
 
   const firstSelectorRef = useRef();

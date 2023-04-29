@@ -1,5 +1,9 @@
 import React from "react";
 import TechnologySectorCard from "./TechnologySelectorCard";
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
+
 
 const TechnologyCard = ({ Name, Image, Description }) => {
   return (
@@ -15,7 +19,7 @@ const TechnologyCard = ({ Name, Image, Description }) => {
               <h2 className="text-[2rem] lg:text-[2.5rem] uppercase mb-4 text-primaryWhite font-BarlowCondensed">
                 {Name}
               </h2>
-              <p className="text-[0.95rem] pb-[2rem]">{Description}</p>
+              <p className="text-[0.95rem]">{Description}</p>
             </div>
           </section>
         </section>

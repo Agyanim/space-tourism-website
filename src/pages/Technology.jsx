@@ -31,7 +31,11 @@ const Technology = () => {
     <>
       <div className="technology-container container-wrapper">
         <section className="page-title">
-          <h5 className="text-[1.2rem] md:text-lg">
+          <h5 className="text-[1.2rem] md:text-lg"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          data-aos-easing="ease-out"
+          >
             <span className="mr-5 opacity-50">{newPageTitles[2].id}</span>
             {newPageTitles[2].title}
           </h5>
