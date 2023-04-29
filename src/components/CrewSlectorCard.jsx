@@ -20,7 +20,7 @@ const CrewSlectorCard = () => {
 
   return (
     <div className="flex justify-center items-center md:justify-start md:items-start">
-      <section className=" absolute flex top-[28rem]  gap-2 md:top-[90%] md:left-[8.5%]">
+      <section className=" absolute flex top-[26rem]  gap-2 md:top-[90%] md:left-[8.5%]">
         <input
           className="crewSelector"
           ref={firstSelectorRef}

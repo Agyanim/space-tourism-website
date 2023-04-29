@@ -45,7 +45,7 @@ const Destination = () => {
     <>
       <div className="destinaion-container container-wrapper">
         <div className="page-title">
-          <h5 className="text-[0.7rem] md:text-lg">
+          <h5 className="text-[1rem] md:text-lg">
             <span className="mr-5 text-primaryWhite opacity-50">{newPageTitles[0].id}</span>
             {newPageTitles[0].title}
           </h5>

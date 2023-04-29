@@ -5,7 +5,7 @@ const CrewCard = ({ Name, Role, Bio, Image }) => {
     <>
       <div className="flex flex-col-reverse md:flex-row justify-center items-center  md:mt-[-3.8rem]  md:gap-[10rem] lg:w-[95%]">
         {/* content wrapper */}
-        <section className="text-primaryWhite w-[90%] md:w-[35.5%] flex  flex-col justify-center items-center md:items-start mt-[5rem] md:mt-0">
+        <section className="text-primaryWhite w-[90%] md:w-[35.5%] flex  flex-col justify-center items-center md:items-start mt-[6rem] md:mt-0">
           <h4 className="text-primaryWhite opacity-50 uppercase mix-blend-normal mb-2 text-base md:text-lg tracking-[0.2rem]">
             {Role}
           </h4>
@@ -18,7 +18,7 @@ const CrewCard = ({ Name, Role, Bio, Image }) => {
         </div>
         {/* hero image */}
         <section
-          className="w-[15rem] h-[15rem] lg:w-[30rem] lg:h-[30rem] mt-[0.5rem] "
+          className="w-[15rem] h-[15rem] lg:w-[30rem] lg:h-[30rem] mt-[-2rem] md:mt-[0.5rem] ml-[3rem]"
           style={{
             backgroundColor: "transparent",
             backgroundImage: `url(${Image})`,

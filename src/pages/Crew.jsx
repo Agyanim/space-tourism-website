@@ -44,7 +44,7 @@ const Crew = () => {
       <div className="crew-container container-wrapper relative">
         {/* page title */}
         <section className="page-title">
-          <h5 className="text-[0.7rem] md:text-lg">
+          <h5 className="text-[1.2rem] md:text-lg">
             <span className="mr-5 opacity-50">{newPageTitles[1].id}</span>
             {newPageTitles[1].title}
           </h5>
