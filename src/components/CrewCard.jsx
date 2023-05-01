@@ -6,7 +6,7 @@ AOS.init();
 const CrewCard = ({ Name, Role, Bio, Image }) => {
   return (
     <>
-      <div className="flex flex-col-reverse md:flex-col lg:flex-row justify-center items-center  md:mt-[3rem]  md:gap-[5rem] lg:gap-0 xl:gap-[7rem] lg:w-[100%] lg:mt-[-0.5rem] bg-gray-600">
+      <div className="flex flex-col-reverse md:flex-col lg:flex-row justify-center items-center  md:mt-[3rem]  md:gap-[5rem] lg:gap-0 xl:gap-[7rem] lg:w-[100%] lg:mt-[-0.5rem]">
         {/* content wrapper */}
         <section className="text-primaryWhite w-[90%]  lg:w-[39rem] xl:w-[35.5] flex  flex-col justify-center items-center lg:justify-start  lg:items-start mt-[6rem] md:mt-[-2rem] lg:top-[10rem] text-center lg:text-left lg:absolute lg:left-[7rem] xl:left-[11rem]  ">
           <h4 className="text-primaryWhite opacity-50 uppercase mix-blend-normal mb-2 text-base md:text-lg lg:text-xl tracking-[0.2rem] ">
