@@ -1,4 +1,5 @@
 /* This css is used only for the styling of the background images of the pages */
+/* Mobile View */
 .home-container{
     background-color: black;
     background-image: url("/home/background-home-mobile.jpg") ;
@@ -7,65 +8,18 @@
     background-position: center;
 }
 
-@media( min-width:765px) {
-    .home-container{
-        background-image: url("/home/background-home-tablet.jpg") ;
-
-    }
-    
-}
-@media( min-width:1020px) {
-    .home-container{
-        background-image: url("/home/background-home-desktop.jpg") ;
-        background-size: auto;
-
-    }
-    
-}
-
 .destinaion-container{
     background-color:black;
     background-image: url("/destination/background-destination-mobile.jpg") ;
     background-size: cover;
     background-repeat: no-repeat;
 }
-
-@media( min-width:765px) {
-    .destinaion-container{
-        background-image: url("/destination/background-destination-tablet.jpg") ;
-    }
-    
-}
-@media( min-width:1020px) {
-    .destinaion-container{
-        background-image: url("/destination/background-destination-desktop.jpg") ;
-        background-size: auto;
-
-    }
-    
-}
-
 .crew-container{
     background-color: black;
     background-image: url("/crew/background-crew-mobile.jpg") ;
     background-size: cover;
     background-repeat: no-repeat;
 
-}
-
-@media( min-width:765px) {
-    .crew-container{
-        background-image: url("/crew/background-crew-tablet.jpg") ;
-    }
-    
-}
-@media( min-width:1020px) {
-    .crew-container{
-        background-image: url("/crew/background-crew-desktop.jpg") ;
-        background-size: auto;
-
-    }
-    
 }
 .technology-container{
     background-color: black;
@@ -75,17 +29,71 @@
 
 }
 
-@media( min-width:765px) {
+.card-image-cover{
+    background-size: contain;
+    background-position:bottom;
+
+}
+/* Tablet view */
+@media( min-width:768px) {
+    .home-container{
+        background-image: url("/home/background-home-tablet.jpg") ;
+
+    }
+    .destinaion-container{
+        background-image: url("/destination/background-destination-tablet.jpg") ;
+    }
+    
+    .card-image-cover{
+        background-size:65;
+        background-position:bottom;
+
+    }
+    .crew-container{
+        background-image: url("/crew/background-crew-tablet.jpg") ;
+    }
     .technology-container{
         background-image: url("/technology/background-technology-tablet.jpg") ;
     }
     
+
 }
+/* Desktop view */
 @media( min-width:1020px) {
+    .home-container{
+        background-image: url("/home/background-home-desktop.jpg") ;
+        background-size: auto;
+
+
+    }
+    .card-image-cover{
+        background-size:65;
+        background-position:bottom;
+
+    }
+    .crew-container{
+        background-image: url("/crew/background-crew-desktop.jpg") ;
+        background-size: auto;
+
+    }
     .technology-container{
         background-image: url("/technology/background-technology-desktop.jpg") ;
         background-size: auto;
 
     }
-    
+
+}
+/* Desktop view */
+@media( min-width:1280px) {
+    .card-image-cover{
+        background-size: 50;
+        background-position:bottom;
+
+    }
+    .destinaion-container{
+        background-image: url("/destination/background-destination-desktop.jpg") ;
+        background-size: auto;
+
+    }
+
 }

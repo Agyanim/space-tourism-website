@@ -45,7 +45,7 @@ const Menu = () => {
     <div className=''
     >
 
-      <div className=' ml-[24re]   w-[70%] h-screen fixed bg-black/40 backdrop-blur-2xl flex flex-col gap-10 pt-[30%] pl-10'>{renderLink}</div>
+      <div className='md:hidden ml-[24re] w-[70%] h-screen fixed bg-black/40 backdrop-blur-2xl flex flex-col gap-10 pt-[30%] pl-10'>{renderLink}</div>
     </div>
   )
 }

@@ -27,7 +27,7 @@ const navLinks = [
 
 const GlobalLayout = () => {
   const activeLink = " border-b-4 border-white flex py-7";
-  const normalLink = "flex hover:border-b-2 py-7 ";
+  const normalLink = "flex hover:border-b-2 py-7  transition-all duration-[0.1s]";
   const [toggleMenu, settoggleMenu] = useState(true);
 
   const togleMenuHandler=()=>{
@@ -37,7 +37,7 @@ const GlobalLayout = () => {
     return (
       // Main navigation links
       <div
-        className="font-BarlowCondensed text-[16px] text-primaryWhite leading-10 border-white/50  transition-all duration-[0.1s]"
+        className="font-BarlowCondensed text-[16px] text-primaryWhite leading-10 border-white/50 "
         key={id}
       >
         <NavLink

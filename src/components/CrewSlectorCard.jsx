@@ -14,8 +14,8 @@ const CrewSlectorCard = () => {
 
 
   return (
-    <div className="flex justify-center items-center md:justify-start md:items-start">
-      <section className=" absolute flex top-[26rem]  gap-2 md:top-[90%] md:left-[8.5%]">
+    <div className="flex justify-center items-center lg:justify-start lg:items-start lg:mt-[0rem]">
+      <section className=" absolute flex top-[26rem] md:top-[25rem] gap-2 lg:top-[90%] lg:left-[8.5%]">
         <input
           className={selector===0? "crewSelector bg-white opacity-100":" crewSelector"}
           type="radio"
