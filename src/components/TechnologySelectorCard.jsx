@@ -12,7 +12,7 @@ setSelector(event.target.id)
 const active="technology-lbl text-black bg-primaryWhite"
 const normal=" technology-lbl border border-primaryWhite primaryWhite"
   return (
-    <div className="flex flex-row lg:flex-col lg:gap-8 gap-4 text-primaryWhite lg:mr-[6rem] mt-2">
+    <div className="flex flex-row lg:flex-col lg:gap-8 gap-4 text-primaryWhite lg:mr-[3rem] mt-2 md:mt-[4rem] lg:mt-[-0.5rem]">
       <div className="relative">
         <label className={+selector===0 ? active:normal} htmlFor="0">1</label>
         <input className=" hidden" type="radio" name="selector" id="0" onClick={onSelectorHandler}/>

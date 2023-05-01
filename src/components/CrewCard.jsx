@@ -31,7 +31,7 @@ const CrewCard = ({ Name, Role, Bio, Image }) => {
         </div>
         {/* hero image */}
         <section
-          className="w-[15rem] h-[15rem] md:w-[20rem] md:h-[12.2rem] lg:w-[25rem] lg:h-[31.5rem] xl:w-[38rem] xl:h-[29rem] mt-[-2rem] md:mt-[0.5rem] ml-[0rem]  md:absolute lg:top-[-2rem] lg:left-[35rem] md:top-[17.5rem] md:left-[12rem] xl:top-[0.5rem] xl:left-[44rem] card-image-cover"
+          className="w-[15rem] h-[15rem] md:w-[20rem] md:h-[12.2rem] lg:w-[25rem] lg:h-[31.5rem] xl:w-[36rem] xl:h-[29rem] mt-[-2rem] md:mt-[0.5rem] ml-[0rem]  md:absolute lg:top-[-2rem] lg:left-[35rem] md:top-[17.5rem] md:left-[12rem] xl:top-[0.5rem] xl:left-[44rem] card-image-cover"
           style={{
             backgroundColor: "transparent",
             backgroundImage: `url(${Image})`,

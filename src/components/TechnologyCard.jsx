@@ -6,16 +6,16 @@ AOS.init();
 
 const TechnologyCard = ({ Name, Image, Description }) => {
   return (
-    <div className="flex justify-end items-center relative top-[10rem] lg:top-[12rem] w-screen">
-      <div className="flex flex-col-reverse md:flex-row justify-end items-center w-full">
-        <section className="flex lg:flex-row flex-col mt-[2rem] md:mt-0 lg:mr-[16rem] w-[90%] lg:w-[44.9%] justify-center items-center ">
+    <div className="flex justify-end items-center relative top-[10rem] md:top-[14rem] lg:top-[12rem] w-screen ">
+      <div className="flex flex-col-reverse lg:flex-row justify-end items-center w-full">
+        <section className="flex lg:flex-row flex-col mt-[2rem] md:mt-0 lg:mr-[5rem] xl:mr-[22rem] w-[90%] lg:w-[55.5%] xl:w-[38.3%] justify-center items-center ">
           <section className="">
             <TechnologySectorCard />
           </section>
-          <section className="w-[100%] mt-10 lg:mt-0">
+          <section className="w-[100%] md:w-[60%] lg:w-[100%] mt-10 lg:mt-0">
             <div className="text-primaryWhite lg:text-primaryGray flex flex-col justify-center items-center lg:justify-start lg:items-start text-center lg:text-left">
-              <p className="text-sm w-[12rem]">THE TECHNOLOGY...</p>
-              <h2 className="text-[2rem] lg:text-[2.5rem] uppercase mb-4 text-primaryWhite font-BarlowCondensed">
+              <p className="text-sm w-[12rem] pb-2 ">THE TECHNOLOGY...</p>
+              <h2 className="text-[2rem] lg:text-[2.5rem] uppercase mb-4 lg:mb-2 text-primaryWhite font-BarlowCondensed">
                 {Name}
               </h2>
               <p
@@ -30,11 +30,12 @@ const TechnologyCard = ({ Name, Image, Description }) => {
             </div>
           </section>
         </section>
-        <section className="bg-primaryWhite lg:w-[25%] w-[100%]">
+        {/* Hero image */}
+        <section className="bg-primaryWhite lg:w-[28%] xl:w-[24.5%] w-[100%]">
           <picture className="">
             <source media="(min-width:1024px )" srcSet={Image[0]} />
             <img
-              className="w-[100%] h-[10rem] lg:w-[22rem] lg:h-[22rem]"
+              className="w-[100%] h-[10rem] lg:w-[22rem] lg:h-[18rem] md:h-[20rem] "
               src={Image[1]}
               alt="Hero image"
             />

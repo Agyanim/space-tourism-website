@@ -42,8 +42,10 @@
     background-color:gray; 
     opacity: 0.2;
   }
+
+  
   .technology-lbl{
-    @apply w-[2rem] h-[2rem] lg:w-[4.5rem] lg:h-[4.5rem] rounded-full text-center flex justify-center items-center font-bold cursor-pointer
+    @apply w-[2rem] h-[2rem] lg:w-[4rem] lg:h-[4rem] xl:w-[3re]  xl:h-[3re]  rounded-full text-center flex justify-center items-center font-bold cursor-pointer
   }
   .destination-lbl{
     @apply  border-white  pb-2 text-primaryGray font-BarlowCondensed cursor-pointer
