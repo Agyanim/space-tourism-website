@@ -62,7 +62,7 @@
 @media( min-width:1020px) {
     .home-container{
         background-image: url("/home/background-home-desktop.jpg") ;
-        background-size: auto;
+        background-size: cover;
 
 
     }
@@ -73,12 +73,12 @@
     }
     .crew-container{
         background-image: url("/crew/background-crew-desktop.jpg") ;
-        background-size: auto;
+        background-size: cover;
 
     }
     .technology-container{
         background-image: url("/technology/background-technology-desktop.jpg") ;
-        background-size: auto;
+        background-size: cover;
 
     }
 
@@ -92,7 +92,7 @@
     }
     .destinaion-container{
         background-image: url("/destination/background-destination-desktop.jpg") ;
-        background-size: auto;
+        background-size: cover;
 
     }
 
